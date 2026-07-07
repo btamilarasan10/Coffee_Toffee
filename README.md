@@ -1,3 +1,4 @@
+
 # ☕ Coffee Toffee — React Portfolio Project
 
 A single-page coffee shop demo built with **React + Vite**, converted from an
@@ -142,4 +143,6 @@ git push -u origin main
 
 ## 📄 License
 
-Free to use for personal portfolio and demo purposes.
+
+
+
