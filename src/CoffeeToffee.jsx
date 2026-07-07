@@ -695,28 +695,199 @@ const CSS = `
             .ct-root .footer-bottom a {color: var(--accent-gold); text-decoration: none; }
 
             /* RESPONSIVE */
-            @media (max-width: 768px) {
-  .ct - root.hamburger {display: flex; }
-            .ct-root .nav-links {display: none; position: absolute; top: 100%; left: 0; right: 0; background: rgba(92,64,51,0.98); flex-direction: column; padding: 1rem 2rem; gap: 0.3rem; }
-            .ct-root .nav-links.open {display: flex; }
-            .ct-root .hero-content {grid - template - columns: 1fr; text-align: center; gap: 2rem; }
-            .ct-root .hero-stats {justify - content: center; }
-            .ct-root .hero-text h1 {font - size: 2rem; }
-            .ct-root .cta-buttons {justify - content: center; }
-            .ct-root .products-grid {grid - template - columns: 1fr; }
-            .ct-root .support-content, .ct-root .login-container, .ct-root .download-container {grid - template - columns: 1fr; }
-            .ct-root .login-form {order: 2; }
-            .ct-root .login-image {order: 1; }
+           /* ==========================
+   TABLETS
+========================== */
+
+@media (max-width:1024px){
+
+.ct-root .hero-content,
+.ct-root .support-content,
+.ct-root .login-container,
+.ct-root .download-container{
+    grid-template-columns:1fr;
+    gap:2rem;
 }
-            @media (max-width: 480px) {
-  .ct - root.nav - container {padding: 0 1rem; }
-            .ct-root .search-bar {max - width: 100%; margin: 0 0.5rem; }
-            .ct-root .hero-section {margin - top: 60px; }
-            .ct-root .cta-buttons {flex - direction: column; }
-            .ct-root .btn-primary, .ct-root .btn-secondary {width: 100%; }
-            .ct-root .hero-image {height: 300px; }
-            .ct-root .section-title {font - size: 1.8rem; }
-            .ct-root .products-grid {grid - template - columns: 1fr; }
-            .ct-root .download-container {gap: 2rem; }
+
+.ct-root .hero-text{
+    text-align:center;
+}
+
+.ct-root .hero-stats{
+    justify-content:center;
+}
+
+.ct-root .cta-buttons{
+    justify-content:center;
+}
+
+.ct-root .products-grid{
+    grid-template-columns:repeat(2,1fr);
+}
+
+.ct-root .services-grid{
+    grid-template-columns:repeat(2,1fr);
+}
+
+.ct-root .search-bar{
+    max-width:250px;
+}
+
+}
+
+
+/* ==========================
+   MOBILE
+========================== */
+
+@media (max-width:768px){
+
+.ct-root .navbar{
+    padding:12px 0;
+}
+
+.ct-root .nav-container{
+    padding:0 15px;
+}
+
+.ct-root .search-bar{
+    display:none;
+}
+
+.ct-root .hamburger{
+    display:flex;
+}
+
+.ct-root .nav-links{
+    position:absolute;
+    top:100%;
+    left:0;
+    width:100%;
+    background:#5C4033;
+    flex-direction:column;
+    display:none;
+    padding:20px;
+}
+
+.ct-root .nav-links.open{
+    display:flex;
+}
+
+.ct-root .hero-section{
+    margin-top:70px;
+}
+
+.ct-root .hero-content{
+    grid-template-columns:1fr;
+    text-align:center;
+    gap:2rem;
+}
+
+.ct-root .hero-image{
+    height:300px;
+}
+
+.ct-root .hero-text h1{
+    font-size:2.2rem;
+}
+
+.ct-root .hero-text p{
+    font-size:1rem;
+}
+
+.ct-root .hero-stats{
+    justify-content:center;
+    flex-wrap:wrap;
+}
+
+.ct-root .cta-buttons{
+    flex-direction:column;
+}
+
+.ct-root .btn-primary,
+.ct-root .btn-secondary{
+    width:100%;
+}
+
+.ct-root .products-grid{
+    grid-template-columns:1fr;
+}
+
+.ct-root .services-grid{
+    grid-template-columns:1fr;
+}
+
+.ct-root .support-content,
+.ct-root .login-container,
+.ct-root .download-container{
+    grid-template-columns:1fr;
+}
+
+.ct-root .phone-frame{
+    width:250px;
+    height:500px;
+}
+
+.ct-root .qr-code{
+    width:220px;
+    height:220px;
+}
+
+.ct-root .footer-content{
+    grid-template-columns:1fr;
+    text-align:center;
+}
+
+.ct-root .social-links{
+    justify-content:center;
+}
+
+}
+
+
+/* ==========================
+   SMALL MOBILE
+========================== */
+
+@media (max-width:480px){
+
+.ct-root .nav-container{
+    padding:0 10px;
+}
+
+.ct-root .logo-icon img{
+    width:55px;
+    height:55px;
+}
+
+.ct-root .hero-content{
+    padding:2rem 1rem;
+}
+
+.ct-root .hero-text h1{
+    font-size:1.8rem;
+}
+
+.ct-root .section-title{
+    font-size:2rem;
+}
+
+.ct-root .product-card{
+    margin:0 10px;
+}
+
+.ct-root .login-form{
+    padding:20px;
+}
+
+.ct-root .phone-frame{
+    width:220px;
+    height:450px;
+}
+
+.ct-root .footer{
+    padding:3rem 1rem;
+}
+
 }
             `;
