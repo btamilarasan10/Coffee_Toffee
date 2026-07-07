@@ -616,7 +616,7 @@ const CSS = `
             .ct-root .action-btn {flex: 1; padding: 0.8rem; border: none; border-radius: 12px; cursor: pointer; font-weight: 600; transition: all 0.3s ease; font-size: 0.85rem; display: flex; align-items: center; justify-content: center; gap: 0.4rem; }
             .ct-root .btn-heart {background: rgba(255,107,107,0.1); color: #ff6b6b; }
             .ct-root .btn-heart:hover {background: #ff6b6b; color: var(--white); }
-            .ct-root .btn-cart {background: linear-gradient(135deg, var(--primary-brown) 0%, var(--secondary-brown) 100%); color: var(--white); }
+            .ct-root .btn-cart {background: linear-gradient(135deg, var(--primary-brown) 0%, var(--secondary-brown) 100%); color: var(--accent-gold); }
             .ct-root .btn-cart:hover {transform: translateY(-3px); box-shadow: 0 10px 25px rgba(92,64,51,0.3); }
             .ct-root .btn-review {background: rgba(212,175,55,0.1); color: var(--accent-gold); }
             .ct-root .btn-review:hover {background: var(--accent-gold); color: var(--dark-brown); }
